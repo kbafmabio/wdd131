@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(146, 77, 143);
+    text-align: center;
+    color: blanchedalmond;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    padding: 2rem;
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+.navigation a:hover {
+    color: rgb(122, 255, 211);
+    text-decoration: underline;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+h2 {
+    background-color: rgb(146, 77, 143);
+}
+
+figure {
+    text-align: right;
+}
+
+.card {
+    border: solid 1px rgb(146, 77, 143);
+    border-radius: 5px;
+    margin: 0.5rem;
+    box-shadow: 2px rgb(12, 0, 11);
+}
+
+p {
+    text-align: justify;
+}
+
+.card li {
+    list-style: inside;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(146, 77, 143);
+}
