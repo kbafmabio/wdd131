@@ -6,13 +6,20 @@
 header {
     background-color: rgb(146, 77, 143);
     text-align: center;
-    color: blanchedalmond;
+    color: white;
+
+}
+
+span {
+    font-size: xx-large;
 }
 
 .navigation {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    background-color: rgb(243, 227, 4);
+    color: rgb(146, 77, 143);
 }
 
 .navigation li {
@@ -21,22 +28,27 @@ header {
 
 .navigation a {
     display: block;
-    padding: 2rem;
+    padding: .5rem;
     text-decoration: none;
-    color: blanchedalmond;
+    color: rgb(146, 77, 143);
+    font-weight: bolder;
 }
 
 .navigation a:hover {
-    color: rgb(122, 255, 211);
-    text-decoration: underline;
+    background-color:rgb(146, 77, 143);
+    color:white;
 }
 
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 16px;
-
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 }
 
+main{
+    padding: 50px;
+}
+h1{
+    text-align: center;
+}
 
 .container {
     display: grid;
@@ -45,6 +57,9 @@ body {
 
 h2 {
     background-color: rgb(146, 77, 143);
+    text-align: center;
+    border-radius: 5px;
+    color: white;
 }
 
 figure {
@@ -53,9 +68,8 @@ figure {
 
 .card {
     border: solid 1px rgb(146, 77, 143);
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 0.5rem;
-    box-shadow: 2px rgb(12, 0, 11);
 }
 
 p {
