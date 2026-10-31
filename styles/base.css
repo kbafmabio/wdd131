@@ -10,7 +10,7 @@ header {
 
 }
 
-span {
+#course-title {
     font-size: xx-large;
 }
 
@@ -35,18 +35,19 @@ span {
 }
 
 .navigation a:hover {
-    background-color:rgb(146, 77, 143);
-    color:white;
+    background-color: rgb(146, 77, 143);
+    color: white;
 }
 
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-family: 'Times New Roman', Times, serif;
 }
 
-main{
-    padding: 50px;
+main {
+    padding: 35px;
 }
-h1{
+
+h1 {
     text-align: center;
 }
 
@@ -62,25 +63,50 @@ h2 {
     color: white;
 }
 
-figure {
-    text-align: right;
+h3 {
+    text-align: center;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+
+}
+
+.text-image {
+    float: right;
+    object-fit: cover;
+    padding: 0 0 10px 15px;
+
+}
+
+.flag {
+    float: left;
+    object-fit: cover;
+    padding: 0 15px 10px;
 }
 
 .card {
-    border: solid 1px rgb(146, 77, 143);
+    border: solid 1px rgb(83, 32, 81);
     border-radius: 10px;
-    margin: 0.5rem;
+    margin: 5px;
+    align-content: center;
+    justify-content: center;
+
 }
 
 p {
-    text-align: justify;
+    text-align: center;
+    margin: 2rem;
 }
 
 .card li {
-    list-style: inside;
     text-align: center;
+    list-style-position: inside;
+
 }
 
 footer {
-    background-color: rgb(146, 77, 143);
+    background-color: rgb(83, 32, 81);
+    color: white;
+    text-align: center;
+    margin: 2px;
+
 }
