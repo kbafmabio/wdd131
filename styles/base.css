@@ -18,7 +18,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    background-color: rgb(243, 227, 4);
+    background-color: yellow;
     color: rgb(146, 77, 143);
 }
 
@@ -30,7 +30,7 @@ header {
     display: block;
     padding: .5rem;
     text-decoration: none;
-    color: rgb(146, 77, 143);
+    color: violet;
     font-weight: bolder;
 }
 
@@ -73,7 +73,9 @@ h3 {
 .text-image {
     float: right;
     object-fit: cover;
-    padding: 0 0 10px 15px;
+    padding: 0 10px 15px;
+    width: 15%;
+    
 
 }
 
@@ -95,6 +97,11 @@ h3 {
 p {
     text-align: center;
     margin: 2rem;
+}
+
+h4 {
+    text-align: left;
+
 }
 
 .card li {
