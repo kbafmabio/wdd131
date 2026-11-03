@@ -19,7 +19,6 @@ header {
     flex-wrap: wrap;
     list-style: none;
     background-color: yellow;
-    color: rgb(146, 77, 143);
 }
 
 .navigation li {
@@ -30,7 +29,7 @@ header {
     display: block;
     padding: .5rem;
     text-decoration: none;
-    color: violet;
+    color: rgb(0, 0, 0);
     font-weight: bolder;
 }
 
@@ -76,7 +75,7 @@ h3 {
     object-fit: cover;
     padding: 0 10px 15px;
     width: 15%;
-    
+
 
 }
 
