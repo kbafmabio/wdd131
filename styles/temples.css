@@ -33,7 +33,6 @@ span.title {
     font-weight: 800;
     text-decoration: none;
     padding: 0.5rem 0.75rem;
-    background-color: none;
     color: white;
 
 }
@@ -44,6 +43,7 @@ span.title {
 
 nav {
     background-color: rgb(99, 17, 99);
+    display: flex;
 }
 
 .navigation {
