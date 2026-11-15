@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <meta name="author" content="Kouassi Bienvenue Adjoua Felicite">
+    <meta name="description" content="Explore how to create a responsibe images.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+
+
+    <script src="scripts/getdates.js" defer></script>
+
+</head>
+
+<body>
+    <header>Responsive Images</header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 550px)">
+                <img src="images/hero-small.webp" alt="Abidjan temple" width="500" height="250">
+            </picture>
+        </div>
+
+    </main>
+    <footer>
+        <p> &copy; <span id="currentyear"></span> 🌸 Kouassi Bienvenue Adjoua Felicite Mabio 🌸 Ivory Coast</p>
+        <p> Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
