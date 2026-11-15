@@ -1,0 +1,29 @@
+@media only screen and (min-width: 740px) {
+    section {
+        width: 500px;
+        height: 400px;
+    }
+
+
+    main {
+        position: relative;
+        
+    }
+
+
+    .card {
+        position: absolute;
+        width: 400px;
+        z-index: 2;
+    }
+
+    .card:first-of-type {
+        top: 50px;
+        left: 30px;
+    }
+
+    .weather-card {
+        bottom: 35px;
+        right: 20px;
+    }
+}

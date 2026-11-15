@@ -43,6 +43,18 @@ div {
     background-color: var(--white-color);
 }
 
+p{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    background-color: var(--secondary-color);
+    padding: 0.75rem;
+    color: var(--white-color);
+    font-size:var(--large-font);
+    width: 300px;
+}
 footer {
     background-color: var(--primary-color);
     color: var(--white-color);
