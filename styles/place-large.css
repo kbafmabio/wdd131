@@ -1,13 +1,14 @@
 @media only screen and (min-width: 740px) {
-    section {
-        width: 450px;
-        height: 400px;
-    }
-
-
+    
     main {
         position: relative;
 
+    }
+    .card,
+    .weather-card{
+        width: 350px;
+        height: auto;
+        justify-content: left;
     }
 
     .hero {
@@ -28,7 +29,7 @@
         margin: 1rem 0 1rem -1.5rem;
         text-align: left;
         padding: 1rem;
-        width: 400px;
+        width: 200px;
     }
 
     .card:first-of-type {
