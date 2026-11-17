@@ -7,14 +7,22 @@
 
     main {
         position: relative;
-        
-    }
 
+    }
 
     .card {
         position: absolute;
-        width: 400px;
         z-index: 2;
+    }
+
+    .card h2,
+    .weather-card h2 {
+        background-color: var(--secondary-color);
+        color: var(--white-color);
+        margin: 1rem 0 1rem -1.5rem;
+        text-align: left;
+        padding: 1rem;
+        width: 400px;
     }
 
     .card:first-of-type {
@@ -23,7 +31,18 @@
     }
 
     .weather-card {
+        position: absolute;
         bottom: 35px;
         right: 20px;
+    }
+
+    .weather img {
+        display: none;
+    }
+
+
+    .weather h2::after {
+        content: "⛅";
+        margin-left: 1rem;
     }
 }
