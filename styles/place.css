@@ -27,6 +27,7 @@
 
 body {
     font-family: var(--heading-font);
+    background-color: var(--secondary-color);
 }
 
 .hero img {
@@ -43,7 +44,7 @@ header {
 }
 
 main {
-    background-color: var(--secondary-color);
+
     margin-top: 0.5rem;
 }
 
@@ -51,7 +52,7 @@ div {
     border: 1px solid var(--border-color);
     text-align: center;
     background-color: var(--white-color);
-    border-radius: 10px;
+
 }
 
 p {
