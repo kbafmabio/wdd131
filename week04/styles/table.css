@@ -1,0 +1,52 @@
+:root {
+    --dark: #000000;
+    --white: #ffffff;
+    --gray: #8d8a8a;
+    --border: #3a3838;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5%;
+}
+
+table {
+    margin: 10px auto;
+    color: var(--dark);
+    width: 400px;
+    border: 1px solid var(--border);
+    border-collapse: collapse;
+}
+
+caption {
+    caption-side: bottom;
+    font-size: smaller;
+    padding: 0.5rem;
+}
+
+tr:first-child th,
+.ntype {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 10px;
+}
+
+.type {
+    background-color: var(--border);
+
+}
+
+th,
+td {
+    padding: 0.5rem 1rem;
+    white-space: pre;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--gray);
+
+}
