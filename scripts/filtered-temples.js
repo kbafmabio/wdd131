@@ -76,19 +76,19 @@ const temples = [
     },
     {
         templeName: "Accra Ghana Temple",
-        location: "Mexico City, Mexico",
-        dedicated: "1983, December, 2",
-        area: 116642,
+        location: "57 Independence Ave, North Ridge, P.M.B CT209, Cantonments, Accra",
+        dedicated: "2004, january, 11",
+        area: 17500,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+            "https://churchofjesuschristtemples.org/accra-ghana-temple/photographs/"
     },
     {
-        templeName: "Mexico City Mexico",
-        location: "Mexico City, Mexico",
-        dedicated: "1983, December, 2",
-        area: 116642,
+        templeName: "Cape Town south Africa Temple",
+        location: "3 Liesbeek Ave, Observatory, Cape Town",
+        dedicated: "2025, October, 25",
+        area: 9500,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+            "https://churchofjesuschristtemples.org/cape-town-south-africa-temple/photographs/"
     },
-    
+
 ];
