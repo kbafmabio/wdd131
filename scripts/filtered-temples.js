@@ -128,6 +128,29 @@ function createTempleCard() {
 createTempleCard();
 
 const old = document.getElementById("old");
+
 old.addEventListener("click", () => {
 
-})
+    createTempleCard(temples.filter(temple => {
+
+        const yearBuilt = Number(temple.dedicated.split(",")[0]);
+
+        return yearBuilt < 1900;
+
+    }));
+
+});
+
+const newT = document.getElementById("new");
+
+newT.addEventListener("click", () => {
+
+    createTempleCard(temples.filter(temple => {
+
+        const yearBuilt = Number(temple.dedicated.split(",")[0]);
+
+        return yearBuilt > 2000;
+
+    }));
+
+});
