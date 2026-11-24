@@ -145,8 +145,8 @@ span {
 }
 
 img {
-    width: 300;
-    height: 200;
+    width: 300px;
+    height: 200px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     aspect-ratio: 16/9;
