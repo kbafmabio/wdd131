@@ -72,7 +72,7 @@ const temples = [
         dedicated: "2025, May, 25",
         area: 17362,
         imageUrl:
-            "https://churchofjesuschristtemples.org/abidjan-ivory-coast-temple/photographs/"
+            "https://churchofjesuschristtemples.org/assets/img/temples/abidjan-ivory-coast-temple/abidjan-ivory-coast-temple-1108.jpg"
     },
     {
         templeName: "Accra Ghana Temple",
@@ -80,42 +80,54 @@ const temples = [
         dedicated: "2004, january, 11",
         area: 17500,
         imageUrl:
-            "https://churchofjesuschristtemples.org/accra-ghana-temple/photographs/"
+            "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-71208.jpg"
     },
     {
-        templeName: "Cape Town south Africa Temple",
-        location: "3 Liesbeek Ave, Observatory, Cape Town",
-        dedicated: "2025, October, 25",
-        area: 9500,
+        templeName: "Bountiful Utah Temple",
+        location: "640 S Bountiful Blvd ,Bountiful, Utah  84010-1394, United States",
+        dedicated: "1995, January, 8-14",
+        area: 104000,
         imageUrl:
-            "https://churchofjesuschristtemples.org/cape-town-south-africa-temple/photographs/"
+            "https://churchofjesuschristtemples.org/assets/img/temples/bountiful-utah-temple/bountiful-utah-temple-64939.jpg"
     },
 
 ];
 
-temples.forEach(temple => {
+function createTempleCard() {
 
-    const templecard = document.createElement("div");
+    temples.forEach(temple => {
 
-    const templeName = document.createElement("h2");
-    const location = document.createElement("p");
-    const dedicated = document.createElement("p");
-    const area = document.createElement("p");
-    const image = document.createElement("img");
+        const templecard = document.createElement("div");
+        const templeName = document.createElement("h2");
+        const location = document.createElement("p");
+        const dedicated = document.createElement("p");
+        const area = document.createElement("p");
+        const image = document.createElement("img");
+        const figure = document.createElement("fugure");
 
-    templeName.innerHTML = temples.templeName;
-    location.innerHTML = `<span>Location: </span>${temples.location}`;
-    dedicated.innerHTML = `<span>Dedicated: </span>${temples.dedicated}`;
-    area.innerHTML = `<span>Area: </span> ${temples.area} km2`;
-    image.setAttribute("alt", "templeName");
-    image.setAttribute("src", image);
-    image.setAttribute("loading", "lazy");
+        templeName.textContent = temple.templeName;
+        location.innerHTML = `<span>Location: </span>${temple.location}`;
+        dedicated.innerHTML = `<span>Dedicated: </span>${temple.dedicated}`;
+        area.innerHTML = `<span>Area: </span> ${temple.area} sq ft`;
+        image.setAttribute("alt", `${templeName}`);
+        image.setAttribute("src", temple.imageUrl);
+        image.setAttribute("loading", "lazy");
+        image.width = 300;
+        image.height = 200;
 
-    templecard.appendChild(templeName);
-    templecard.appendChild(location);
-    templecard.appendChild(dedicated);
-    templecard.appendChild(area);
-    templecard.appendChild(Image);
-    document.getElementById("temple-card").appendChild(templecard);
+        templecard.appendChild(templeName);
+        templecard.appendChild(location);
+        templecard.appendChild(dedicated);
+        templecard.appendChild(area);
+        figure.appendChild(image);
+        templecard.appendChild(figure);
+        document.getElementById("temple-card").appendChild(templecard);
 
-});
+    });
+};
+createTempleCard();
+
+const old = document.getElementById("old");
+old.addEventListener("click", () => {
+
+})
