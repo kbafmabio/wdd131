@@ -92,3 +92,30 @@ const temples = [
     },
 
 ];
+
+temples.forEach(temple => {
+
+    const templecard = document.createElement("div");
+
+    const templeName = document.createElement("h2");
+    const location = document.createElement("p");
+    const dedicated = document.createElement("p");
+    const area = document.createElement("p");
+    const image = document.createElement("img");
+
+    templeName.innerHTML = temples.templeName;
+    location.innerHTML = `<span>Location: </span>${temples.location}`;
+    dedicated.innerHTML = `<span>Dedicated: </span>${temples.dedicated}`;
+    area.innerHTML = `<span>Area: </span> ${temples.area} km2`;
+    image.setAttribute("alt", "templeName");
+    image.setAttribute("src", image);
+    image.setAttribute("loading", "lazy");
+
+    templecard.appendChild(templeName);
+    templecard.appendChild(location);
+    templecard.appendChild(dedicated);
+    templecard.appendChild(area);
+    templecard.appendChild(Image);
+    document.getElementById("temple-card").appendChild(templecard);
+
+});
