@@ -15,27 +15,24 @@ main {
 header {
     display: flex;
     background-color: var(--secondary-color);
-
+    gap: 15px;
 }
 
 
 .logo {
     width: 100px;
     height: 100px;
-    text-align: left;
-    justify-content: center;
+    object-fit: contain;
 }
 
 span {
     text-transform: uppercase;
-    align-items: left;
 }
 
 h1 {
     color: var(--white);
     font-weight: bolder;
     text-align: center;
-
 }
 
 h2 {
@@ -84,11 +81,19 @@ tr:first-child th,
     background-color: var(--text-color);
 }
 
-img {
-    align-items: center;
-    justify-content: center;
+h3 {
+    text-align: center;
+}
+
+.wiref img {
+    display: block;
+    margin: 0 auto;
+
 }
 
 footer {
     background-color: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+    color: var(--text-color);
 }
