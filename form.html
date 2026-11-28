@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product form</title>
+    <meta name="author" content="Kouassi Bienvenue Adjoua Felicite Mabio">
+    <meta name="description"
+        content="  Create a product form that people can see the information about product and fill the form to have their products.  ">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <label for="productname" id="productName"> Product Name
+            </label>
+            <select name="productname" id="productselect" required title="Choose a Product">
+                <option value="0">Choose a Product</option>
+                <option value="1">Flux capacitor</option>
+                <option value="2">Power laces</option>
+                <option value="3">Time circuits</option>
+                <option value="4">Low voltage reactor</option>
+                <option value="5">Warp equalizer</option>
+            </select>
+            <label for="overallrating"> Overall Rating
+            </label>
+            <div class="star">
+                <label for="onestar"> ☆ </label>
+                <input type="radio" name="one" id="onestar" value="1" required>
+                <input type="radio" name="one" id="twostar" value="2" required> ☆☆ <label for="twostar"> </label>
+                <input type="radio" name="one" id="treestar" value="3" required> ☆☆☆ <label for="treestar"> </label>
+                <input type="radio" name="one" id="fourstar" value="4" required> ☆☆☆☆ <label for="fourstar"> </label>
+                <input type="radio" name="one" id="fivestar" value="5" required> ☆☆☆☆☆ <label for="fivestar"> </label>
+            </div>
+            <label for="date"> Date for Installation </label>
+            <input type="date" name="date" id="dateofins" required>
+            <label for="usefulfeatures"> Useful Features</label>
+            <input type="checkbox" id="durability" name="durability" value="1"> <label for="durability">
+                Durability</label>
+            <input type="checkbox" id="easeofuse" name="easeofuse" value="2"> <label for="easeof use">Ease of
+                use</label>
+
+            <input type="checkbox" id="performance" name="performance" value="3"> <label for="performance">
+                performance</label>
+            <input type="checkbox" id="design" name="design" value="4"> <label for="performance">
+                Design</label>
+            <label for="writtenreview">Written Review(optional)</label>
+            <input type="textarea" id="textarea" name="textarea">
+            <label for="yourname"> User Name(optional) </label>
+            <input type="text" name="yourname" id="yourname">
+
+            <input type="submit" name="submit" id="submit" value="">
+
+        </form>
+
+    </main>
+    <footer>
+        <p> &copy; <span id="currentyear"></span> 🌸 Kouassi Bienvenue Adjoua Felicite Mabio 🌸 Ivory Coast</p>
+        <p> Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
